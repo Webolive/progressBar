@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=GFS+Didot&display=swap');
+
+*, ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vw;
+    font-family: 'GFS Didot', 'Cormorant Garamond', serif;
+}
+
+.fr, .en, .de {
+    display: grid;
+    grid-template: repeat(1, 20px) / repeat(1, 100px) 300px;
+    margin-bottom: 10px;
+}
+
+.progressBars {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stack-top {
+    z-index: 9;
+}
+
+.fr {
+    grid-area: 1 / 1 / 2 / 3 ;
+}
+
+.langueFr, .langueEn, .langueDe {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.progressBarFrancais, .progressBarAnglais, .progressBarAllemand {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 3px solid blue;
+    background-color: antiquewhite;
+    border-radius: 100px;
+}
+
+.boxFr, .boxEn, .boxDe {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 14px;
+    border-radius: 100px;
+    background-color: aqua;
+}
+
+.boxFr p, .boxEn p, .boxDe p {
+    padding-right: 10px;
+}
+
+.progFr, .progEn, .progDe {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Modification of the progression */
+
+.boxFr {
+    width: 300px;
+}
+
+.boxEn, .boxDe {
+    width: 270px;
+}
